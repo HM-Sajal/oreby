@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Heading = ({title, className}) => {
+const Heading = ({ as: Component = 'h1', className, title }) => {
+  let heading1 = "font-dm text-primary text-base md:text-[18px] lg:text-heading font-bold";
   return (
-    <h2 className={`font-dm text-primary text-base md:text-[18px] lg:text-heading font-bold ${className}`}>{title}</h2>
-  )
-}
+    <Component className={className} heading1={heading1}>
+      {title}
+    </Component>
+  );
+};
+
 
 export default Heading

@@ -55,7 +55,7 @@ const Newarrivals = () => {
     <div className='mt-10 md:mt-28'>
         <Container>
             <div>
-                <Heading title='New Arrivals'/>
+                <Heading heading1 title='New Arrivals' as="h2"/>
             </div>
             <div className='gap-x-10 mt-5 md:mt-12'>
             <Slider {...settings}>
