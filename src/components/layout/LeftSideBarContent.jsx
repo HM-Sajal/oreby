@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Heading2 from './heading2';
+import Heading from './Heading';
 import { GoTriangleRight, GoTriangleDown } from 'react-icons/go';
 import LeftSideBarItems from './LeftSideBarItems';
 
@@ -7,11 +7,12 @@ const LeftSideBarContent = ({ dropDown, dropTitle, dropSubTitle, data }) => {
   const [dropShow, setDropShow] = useState(dropDown);
   const [show, setShow] = useState(dropDown);
 
+
   return (
     <div>
       {dropShow ? (
         <div onClick={() => setShow(!show)} className='flex items-center justify-between'>
-          <Heading2 className='cursor-pointer mb-8 mt-4' title={dropTitle} />
+          <Heading as='h3' heading2 className='cursor-pointer mb-8 mt-4' title={dropTitle} />
           {show ? <GoTriangleDown className='cursor-pointer' /> : <GoTriangleRight className='cursor-pointer' />}
         </div>
       ) : (

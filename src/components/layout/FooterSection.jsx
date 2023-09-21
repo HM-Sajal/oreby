@@ -5,7 +5,7 @@ const FooterSection = ({title, items}) => {
   return (
     <div className="w-[33%] md:w-[13%]">
         <h4 className='mb-4 font-dm text-sm md:text-base font-bold'>{title}</h4>
-        <List>
+        <List className="flex flex-col">
             {items.map((item, index)=>(
                 <ListItem
                 key={index}

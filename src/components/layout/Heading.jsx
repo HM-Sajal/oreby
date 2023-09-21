@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Heading = ({ as: Component = 'h1', className, title }) => {
-  let heading1 = "font-dm text-primary text-base md:text-[18px] lg:text-heading font-bold";
+const Heading = ({ as, className, title, headingClasses, ...rest}) => {
+  // const headingClasses = `${heading1? "font-dm text-primary text-base md:text-[18px] lg:text-heading font-bold": ""}
+  // ${heading2? "font-dm font-bold text-base md:text-heading2 lg:max-xl:text-sm text-primary":""}`;
+
   return (
-    <Component className={className} heading1={heading1}>
+    <as className={`${className}`}>
       {title}
-    </Component>
+    </as>
   );
 };
 

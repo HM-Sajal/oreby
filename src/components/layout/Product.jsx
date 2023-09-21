@@ -6,7 +6,7 @@ import {BsFillHeartFill} from 'react-icons/bs';
 import {TfiReload} from 'react-icons/tfi';
 import {PiShoppingCartSimpleFill} from 'react-icons/pi';
 import Paragraph from './Paragraph';
-import Heading2 from './heading2';
+import Heading from './Heading';
 
 const Product = ({src, badgeTitle}) => {
   return (
@@ -33,7 +33,7 @@ const Product = ({src, badgeTitle}) => {
       </div>
       <div>
         <Flex className='justify-between mt-4 md:mt-6 mb-2 md:mb-4 lg:max-xl:mb-1'>
-          <Heading2 title='Basic Crew Neck Tee'/>
+          <Heading as="h3" heading2 title='Basic Crew Neck Tee'/>
           <Paragraph className='font-normal text-sm md:text-base lg:max-xl:text-[12px]' title='$44.00'/>  
         </Flex>
           <Paragraph className='font-normal text-sm md:text-base lg:max-xl:text-[12px]' title='Black'/>  
