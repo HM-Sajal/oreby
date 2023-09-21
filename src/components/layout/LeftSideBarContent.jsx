@@ -16,7 +16,7 @@ const LeftSideBarContent = ({ dropDown, dropTitle, dropSubTitle, data }) => {
           {show ? <GoTriangleDown className='cursor-pointer' /> : <GoTriangleRight className='cursor-pointer' />}
         </div>
       ) : (
-        <Heading2 className='cursor-pointer mb-8 mt-4' title={dropTitle} />
+        <Heading as='h3' className='cursor-pointer mb-8 mt-4' title={dropTitle} />
       )}
 
       {show && (
